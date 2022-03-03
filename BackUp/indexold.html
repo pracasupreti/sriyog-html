@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SriYog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+
+    <!-- =======================================
+     ========== Global header for Sriyog.com goes here 
+    =========================== -->
+
+
+
+
+    <div class="container-fluid shadow">
+
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light sy-nav">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" class="nav-logo"> | Beta
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-3  font-weight-bold">
+                            <a class="nav-link" href="https://www.sriyog.com">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item mr-3  font-weight-bold">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item mr-3  font-weight-bold dropdown">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mr-3  font-weight-bold">
+                            <a class="nav-link" href="team.html">Team</a>
+                        </li>
+
+                        <li class="nav-item mr-3  font-weight-bold">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+
+                        <li class="nav-item mr-3  font-weight-bold">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item mr-3  font-weight-bold">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item mr-3  font-weight-bold">
+                            <a class="btn btn-outline-success my-2 my-sm-0 sy-login">Login</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-np"> </span> </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                <a class="dropdown-item" href="#fr"><span class="flag-icon flag-icon-us"> </span>  </a>
+                                <a class="dropdown-item" href="#it"><span class="flag-icon flag-icon-gb"> </span>  </a>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================
+    ==============about main container starts
+  ================= -->
+
+    <section class="top-container">
+        <div class="top-image-container position-relative">
+            <img src="https://sriyog.com/wp-content/uploads/2019/09/ajay.jpg" alt="image" class="image-style opacity-7" />
+            <div class="sriyogweb_photo_credit">
+                <i class="fas fa-camera"></i> Photo Source: <span class="credit_name"><a target="_blank" href="https://www.facebook.com/photo.php?fbid=792732534105247&set=a.521354767909693&type=1&theater"> &copy; Ajay Thapa Magar</a></span>
+            </div>
+        </div>
+        <div class="top-container-fields">
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-10 col-md-4 col-lg-3 p-0 margin-0-5 font-size-14">
+                    <label class="filed-wrapper">
+                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/location-brand-color.svg" />
+                        <!--<input class="input-filed col-11 m-0 p-0 pl-5px" placeholder=" Enter your Location" />-->
+                        <select name="select2_search_loc" class="select2_search_loc js-states col-11 m-0 p-0 pl-5px" id="id_label_single"></select>
+                        
+                    </label>
+                    <span class="font-size-14 hint-text justify-content-center">Example : Biratnagar, Kathmandu, Sydney, etc.</span>
+                </div>
+                <div class="col-10 col-sm-8 col-md-4 col-lg-3 margin-0-5 p-0 font-size-14">
+                    <label class="filed-wrapper">
+                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/service.svg" class="service-icon">
+                       <!-- <input class="input-filed col-11 m-0 p-0 pl-5px" placeholder=" What Service do you need?" />-->
+                        <select name="select2_search_ser" class="select2_search_ser js-states col-11 m-0 p-0 pl-5px"></select>
+                    </label>
+                    <span class="font-size-14 hint-text  justify-content-center">Example : Cleaner, Carpenter, Painter, etc.</span>
+                </div>
+                <div class='front_page search-btn' onclick="SriyogSearch()">
+                    Search
+                </div>
+            </div>
+            <!-- col-sm-2 col-lg-1 -->
+            <div class="row justify-content-center mt-3">
+                <div class="col-4 col-sm-5 p-0 margin-0-5">
+                    <div class="col-12 col-sm-7 col-md-6 col-lg-5 p-0 ml-auto">
+                        <a href="https://sriyog.com/locations">
+                            <div class="sriyogweb-btn font-size-14 ws-no-wrap">
+                                Browse All Cities
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 p-0 col-sm-5 margin-0-5 ">
+                    <div class="col-12 col-sm-7 col-md-6 col-lg-5 p-0 ">
+                        <a href="https://sriyog.com/services">
+                            <div class="sriyogweb-btn font-size-14 ws-no-wrap">
+                                Browse All Services
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="content" class="site-content">
+
+
+
+        <!-- services start -->
+        <section class="sriyog-services container">
+            <div class="row align-items-center">
+                <div class="col-md-2 p-0 pl-4">
+                    <span><b>Top Services</b></span>
+                </div>
+                <!-- ////////////////// -->
+                <div class="col-md-10 flex-wrap flex justify-content-around">
+                    <div class="sriyog-top-service">
+                        <a href="https://sriyog.com/services/electrician/">
+                            <img alt="" src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/electrician.svg" />
+                            <span class="font-size-12 mt-2">Electrician</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-top-service">
+                        <a href="https://sriyog.com/services/bus-ticket/">
+                            <img alt="" src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/bus-ticket.svg" />
+                            <span class="font-size-12 mt-2">Bus Ticket</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-top-service">
+                        <a href="https://sriyog.com/services/painter/">
+                            <img alt="" src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/painter.svg" />
+                            <span class="font-size-12 mt-2">Painter</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-top-service">
+                        <a href="https://sriyog.com/services/home-tuition/">
+                            <img alt="" src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/home-tuition.svg" />
+                            <span class="font-size-12 mt-2">Home Tuition</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-top-service">
+                        <a href="https://sriyog.com/services/driver/">
+                            <img alt="" src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/driver.svg" />
+                            <span class="font-size-12 mt-2">Driver</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-top-service">
+                        <a href="https://sriyog.com/services/airport-taxi/">
+                            <img alt="" src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/airport-taxi.svg" />
+                            <span class="font-size-12 mt-2">Airport Taxi</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-top-service">
+                        <a href="https://sriyog.com/services/delivery-boy/">
+                            <img alt="" src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/delivery-boy.svg" />
+                            <span class="font-size-12 mt-2">Delivery Boy</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-top-service">
+                        <a href="https://sriyog.com/services/veterinary-tech-doctor/">
+                            <img alt="" src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/veterinary-tech-doctor.svg" />
+                            <span class="font-size-12 mt-2">Veterinary Tech / Doctor</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ////////////////// -->
+            </div>
+        </section>
+
+        <!-- services end -->
+        <!-- seasonal services start -->
+        <section class="sriyog-seasonal-services container mb-4 ">
+            <div class="row">
+                <div class="col-md-2 p-0 pl-4">
+                    <div class='mt-20px'><b>Seasonal Services</b></div>
+                </div>
+                <div class="col-md-10 flex flex-wrap justify-content-around mb-11px">
+                    <div class="sriyog-seasonal-service box-shadow border-radius-3">
+                        <a href="https://sriyog.com/services/microbus-vehicles/">
+                            <img class='image-style-contain' src='https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/microbus-vehicles.svg' alt='Microbus' />
+                            <span class="ws-no-wrap icon-title">Microbus</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-seasonal-service box-shadow border-radius-3">
+                        <a href="https://sriyog.com/services/tax-expert/">
+                            <img class='image-style-contain' src='https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/tax-expert.svg' alt='Tax Expert' />
+                            <span class="ws-no-wrap icon-title">Tax Expert</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-seasonal-service box-shadow border-radius-3">
+                        <a href="https://sriyog.com/services/graphics-designer/">
+                            <img class='image-style-contain' src='https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/graphics-designer.svg' alt='Graphics Designer' />
+                            <span class="ws-no-wrap icon-title">Graphics Designer</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-seasonal-service box-shadow border-radius-3">
+                        <a href="https://sriyog.com/services/beautician/">
+                            <img class='image-style-contain' src='https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/beautician.svg' alt='Beautician' />
+                            <span class="ws-no-wrap icon-title">Beautician</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-seasonal-service box-shadow border-radius-3">
+                        <a href="https://sriyog.com/services/photographer/">
+                            <img class='image-style-contain' src='https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/photographer.svg' alt='Photographer' />
+                            <span class="ws-no-wrap icon-title">Photographer</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-seasonal-service box-shadow border-radius-3">
+                        <a href="https://sriyog.com/services/ac-fridge/">
+                            <img class='image-style-contain' src='https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/ac-fridge.svg' alt='A/C Fridge' />
+                            <span class="ws-no-wrap icon-title">A/C Fridge</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-seasonal-service box-shadow border-radius-3">
+                        <a href="https://sriyog.com/services/pandit/">
+                            <img class='image-style-contain' src='https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/pandit.svg' alt='Pandit' />
+                            <span class="ws-no-wrap icon-title">Pandit</span>
+                        </a>
+                    </div>
+                    <div class="sriyog-seasonal-service box-shadow border-radius-3">
+                        <a href="https://sriyog.com/services/tourist-guide/">
+                            <img class='image-style-contain' src='https://sriyog.com/wp-content/themes/themesriyog/assets/images/cat-icons/tourist-guide.svg' alt='Tourist Guide' />
+                            <span class="ws-no-wrap icon-title">Tourist Guide</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- seasonal services end -->
+
+
+        <!-- top professional start -->
+        <section class="sriyog-top-professionals container pt-5pc pb-20px">
+            <div class="row margin-bottom--32">
+                <div class="sriyog-top-professional-title">
+                    <div class="ml-4 "><b>Top Professionals</b></div>
+                </div>
+            </div>
+
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12 p-3">
+                        <div class="sriyog_professional_wrapper  card sriyogweb-info-card p-3">
+                            <div class="sriyogweb-professional-avatar">
+                                <img src="https://sriyog.com/wp-content/uploads/2019/09/20190915_202836.jpg" class="image-style" />
+
+                            </div>
+                            <div>
+                                <div class="mt-3 position-relative">
+                                    <img class="sriyogweb-professional-medal" src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/medal.svg" alt="medal" />
+                                    <div>
+                                        <div class='font-size-20 sriyogweb_topper'><a href="https://sriyog.com/balram7">Balram Gautam</a></div>
+                                        <span class="font-size-14">
+                                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/small_user.svg" alt="user" />
+                                        <span class="font-size-12">Tax Expert</span>
+                                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/small_location.svg" alt="location" />
+                                        <span class="font-size-12">Samakhusi</span>
+                                        </span>
+                                    </div>
+                                    <!-- <span class='sriyogweb-professional-achieved font-size-12 ws-no-wrap'>Top Reviewed</span>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 p-3">
+                        <div class="sriyog_professional_wrapper  card sriyogweb-info-card p-3">
+                            <div class="sriyogweb-professional-avatar">
+                                <img src="https://sriyog.com/wp-content/uploads/2019/09/Roshan-Banstola.jpg" class="image-style" />
+
+                            </div>
+                            <div>
+                                <div class="mt-3 position-relative">
+                                    <img class="sriyogweb-professional-medal" src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/medal.svg" alt="medal" />
+                                    <div>
+                                        <div class='font-size-20 sriyogweb_topper'><a href="https://sriyog.com/roshanb54">Roshan Banstola</a></div>
+                                        <span class="font-size-14">
+                                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/small_user.svg" alt="user" />
+                                        <span class="font-size-12">Web Designer</span>
+                                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/small_location.svg" alt="location" />
+                                        <span class="font-size-12">Pokhara</span>
+                                        </span>
+                                    </div>
+                                    <!-- <span class='sriyogweb-professional-achieved font-size-12 ws-no-wrap'>Top Reviewed</span>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 p-3">
+                        <div class="sriyog_professional_wrapper  card sriyogweb-info-card p-3">
+                            <div class="sriyogweb-professional-avatar">
+                                <img src="https://sriyog.com/wp-content/uploads/2019/09/69513833_2406848752971659_6305391901860167680_n.jpg" class="image-style" />
+
+                            </div>
+                            <div>
+                                <div class="mt-3 position-relative">
+                                    <img class="sriyogweb-professional-medal" src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/medal.svg" alt="medal" />
+                                    <div>
+                                        <div class='font-size-20 sriyogweb_topper'><a href="https://sriyog.com/mousam1">mousam </a></div>
+                                        <span class="font-size-14">
+                                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/small_user.svg" alt="user" />
+                                        <span class="font-size-12">Graphics Designer</span>
+                                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/small_location.svg" alt="location" />
+                                        <span class="font-size-12">Pathari</span>
+                                        </span>
+                                    </div>
+                                    <!-- <span class='sriyogweb-professional-achieved font-size-12 ws-no-wrap'>Top Reviewed</span>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 p-3">
+                        <div class="sriyog_professional_wrapper  card sriyogweb-info-card p-3">
+                            <div class="sriyogweb-professional-avatar">
+                                <img src="https://sriyog.com/wp-content/uploads/2019/09/Photo.jpg" class="image-style" />
+
+                            </div>
+                            <div>
+                                <div class="mt-3 position-relative">
+                                    <img class="sriyogweb-professional-medal" src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/medal.svg" alt="medal" />
+                                    <div>
+                                        <div class='font-size-20 sriyogweb_topper'><a href="https://sriyog.com/mssharma">Madhu Sudan Sharma</a></div>
+                                        <span class="font-size-14">
+                                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/small_user.svg" alt="user" />
+                                        <span class="font-size-12">Air Ticket</span>
+                                        <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/small_location.svg" alt="location" />
+                                        <span class="font-size-12">Dhumbarahi</span>
+                                        </span>
+                                    </div>
+                                    <!-- <span class='sriyogweb-professional-achieved font-size-12 ws-no-wrap'>Top Reviewed</span>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- top professional end -->
+
+
+
+        <!-- supported by start -->
+        <section class='supported-by-container'>
+            <div class='supported-by container'>
+                <span class='sriyogweb_supported-by-text'><b>Supported By:</b></span>
+                <div class='agency_slider_wrapper'>
+                    <div class="sriyogweb_supporter_slider">
+                        <div class='news-site-img-container'>
+                        </div>
+                        <div class='news-site-img-container'>
+                        </div>
+                        <div class='news-site-img-container'>
+                        </div>
+                        <div class='news-site-img-container'>
+                        </div>
+                        <div class='news-site-img-container'>
+                        </div>
+                        <div class='news-site-img-container'>
+                        </div>
+                        <div class='news-site-img-container'>
+                        </div>
+                        <div class='news-site-img-container'>
+                        </div>
+                        <div class='news-site-img-container'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- supported by end -->
+
+
+        <!-- success stories start -->
+        <section class='success-stories container'>
+            <div class="row">
+                <div class="success-stories-title">
+                    <b class="bold">Stories</b>
+                </div>
+            </div>
+            <div class='row box-shadow border-radius-3 p-4'>
+                <div class='col-12 col-md-12 col-lg-7 mb-5'>
+                    <div class='font-size-16'>
+                        <b>Enhance your beauty with Beautician Sunita</b>
+                    </div>
+                    <div class='success-stories-description font-size-14'>
+                        <p>
+                            Follow Beautician Sunita on her Instagram page and Facebook page to get DIY tips and her great works, and wanna hire her for beauty work, find her</p>
+                        <a class='read-story' href="https://sriyog.com/enhance-your-beauty-with-beautician-sunita/">
+                            <span>Read story</span>
+                            <div class='border-btm'></div>
+                        </a>
+                        <br />
+                    </div>
+                    <img width="626" height="417" src="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/portrait-woman-wearing-beauty-mask_1303-13046.jpg?fit=626%2C417&amp;ssl=1" class="success-image-style border-radius-3 wp-post-image" alt="" srcset="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/portrait-woman-wearing-beauty-mask_1303-13046.jpg?w=626&amp;ssl=1 626w, https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/portrait-woman-wearing-beauty-mask_1303-13046.jpg?resize=300%2C200&amp;ssl=1 300w"
+                        sizes="(max-width: 626px) 100vw, 626px" data-attachment-id="8108" data-permalink="https://sriyog.com/enhance-your-beauty-with-beautician-sunita/portrait-woman-wearing-beauty-mask_1303-13046/" data-orig-file="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/portrait-woman-wearing-beauty-mask_1303-13046.jpg?fit=626%2C417&amp;ssl=1"
+                        data-orig-size="626,417" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+                        data-image-title="portrait-woman-wearing-beauty-mask_1303-13046" data-image-description="" data-medium-file="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/portrait-woman-wearing-beauty-mask_1303-13046.jpg?fit=300%2C200&amp;ssl=1"
+                        data-large-file="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/portrait-woman-wearing-beauty-mask_1303-13046.jpg?fit=626%2C417&amp;ssl=1" />
+                    <!-- <div class='vendors flex justify-content-center align-items-center'>
+                          <img src='/assets/images/eswa.png' alt='esewa' class='image-style' />
+                          <img src='/assets/images/amazon.png' alt='amazon' class='image-style' />
+                          <img src='/assets/images/sony.png' alt='sony' class='image-style' />
+                          <img src='/assets/images/sony.png' alt='sony' class='image-style' />
+                      </div> -->
+                </div>
+                <div class='col-12 col-md-12 col-lg-5'>
+                    <div class='row'>
+                        <div class='col-12 col-sm-3 col-md-5 col-lg-3 success-side-stories-img-div mb-5'>
+                            <img width="600" height="400" src="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/16627.jpg?fit=600%2C400&amp;ssl=1" class="border-radius-3 success-side-stories-img wp-post-image" alt="" srcset="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/16627.jpg?w=600&amp;ssl=1 600w, https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/16627.jpg?resize=300%2C200&amp;ssl=1 300w"
+                                sizes="(max-width: 600px) 100vw, 600px" data-attachment-id="8109" data-permalink="https://sriyog.com/top-10-jobs-for-students-in-sriyog-com/booklaptoppencilclock-on-wooden-table-in-libraryeducation-learning-concept/" data-orig-file="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/16627.jpg?fit=600%2C400&amp;ssl=1"
+                                data-orig-size="600,400" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;2.8&quot;,&quot;credit&quot;:&quot;PORNSAWAN&quot;,&quot;camera&quot;:&quot;NIKON D800&quot;,&quot;caption&quot;:&quot;Book,laptop,pencil,clock on wooden table in library,education learning concept&quot;,&quot;created_timestamp&quot;:&quot;1564764231&quot;,&quot;copyright&quot;:&quot;SANGMANEE&quot;,&quot;focal_length&quot;:&quot;140&quot;,&quot;iso&quot;:&quot;400&quot;,&quot;shutter_speed&quot;:&quot;0.00625&quot;,&quot;title&quot;:&quot;Book,laptop,pencil,clock on wooden table in library,education learning concept&quot;,&quot;orientation&quot;:&quot;1&quot;}"
+                                data-image-title="Book,laptop,pencil,clock on wooden table in library,education learning concept" data-image-description="" data-medium-file="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/16627.jpg?fit=300%2C200&amp;ssl=1"
+                                data-large-file="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/16627.jpg?fit=600%2C400&amp;ssl=1" /> </div>
+                        <div class='col-12 col-sm-9 col-md-7 col-lg-9 mb-3'>
+                            <span class="font-size-16 bold">Top 10 jobs for students in Sriyog.Com</span>
+                            <div class='success-stories-description font-size-14'>
+                                <p>
+                                    Now you are the college student, gradually you are getting your own financial affairs apart from your parents.</p>
+                                <a class='read-story' href="https://sriyog.com/top-10-jobs-for-students-in-sriyog-com/">
+                                    <span>Read story</span>
+                                    <div class='border-btm'></div>
+                                </a>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-12 col-sm-3 col-md-5 col-lg-3 success-side-stories-img-div mb-5'>
+                            <img width="626" height="352" src="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/closeup-startup-business-concept-team-business-meeting-analysis-financial-data-document-paper_35674-1103.jpg?fit=626%2C352&amp;ssl=1" class="border-radius-3 success-side-stories-img wp-post-image"
+                                alt="" srcset="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/closeup-startup-business-concept-team-business-meeting-analysis-financial-data-document-paper_35674-1103.jpg?w=626&amp;ssl=1 626w, https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/closeup-startup-business-concept-team-business-meeting-analysis-financial-data-document-paper_35674-1103.jpg?resize=300%2C169&amp;ssl=1 300w"
+                                sizes="(max-width: 626px) 100vw, 626px" data-attachment-id="8110" data-permalink="https://sriyog.com/how-can-i-start-at-sriyog-com/closeup-startup-business-concept-team-business-meeting-analysis-financial-data-document-paper_35674-1103/"
+                                data-orig-file="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/closeup-startup-business-concept-team-business-meeting-analysis-financial-data-document-paper_35674-1103.jpg?fit=626%2C352&amp;ssl=1" data-orig-size="626,352"
+                                data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}"
+                                data-image-title="closeup-startup-business-concept-team-business-meeting-analysis-financial-data-document-paper_35674-1103" data-image-description="" data-medium-file="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/closeup-startup-business-concept-team-business-meeting-analysis-financial-data-document-paper_35674-1103.jpg?fit=300%2C169&amp;ssl=1"
+                                data-large-file="https://i2.wp.com/sriyog.com/wp-content/uploads/2019/08/closeup-startup-business-concept-team-business-meeting-analysis-financial-data-document-paper_35674-1103.jpg?fit=626%2C352&amp;ssl=1" />                            </div>
+                        <div class='col-12 col-sm-9 col-md-7 col-lg-9 mb-3'>
+                            <span class="font-size-16 bold">How can I start at Sriyog.Com?</span>
+                            <div class='success-stories-description font-size-14'>
+                                <p>
+                                    Sriyog.Com has details of wide range of professionals nearby you. Step 1 :- Visit Website / App / Toll</p>
+                                <a class='read-story' href="https://sriyog.com/how-can-i-start-at-sriyog-com/">
+                                    <span>Read story</span>
+                                    <div class='border-btm'></div>
+                                </a>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-12 col-sm-3 col-md-5 col-lg-3 success-side-stories-img-div mb-5'>
+                            <img width="626" height="417" src="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/hand-holding-q-wooden-cube-block_42256-1481.jpg?fit=626%2C417&amp;ssl=1" class="border-radius-3 success-side-stories-img wp-post-image" alt="" srcset="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/hand-holding-q-wooden-cube-block_42256-1481.jpg?w=626&amp;ssl=1 626w, https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/hand-holding-q-wooden-cube-block_42256-1481.jpg?resize=300%2C200&amp;ssl=1 300w"
+                                sizes="(max-width: 626px) 100vw, 626px" data-attachment-id="8111" data-permalink="https://sriyog.com/top-5-reasons-to-work-with-sriyog-com/hand-holding-q-wooden-cube-block_42256-1481/" data-orig-file="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/hand-holding-q-wooden-cube-block_42256-1481.jpg?fit=626%2C417&amp;ssl=1"
+                                data-orig-size="626,417" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+                                data-image-title="hand-holding-q-wooden-cube-block_42256-1481" data-image-description="" data-medium-file="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/hand-holding-q-wooden-cube-block_42256-1481.jpg?fit=300%2C200&amp;ssl=1"
+                                data-large-file="https://i0.wp.com/sriyog.com/wp-content/uploads/2019/08/hand-holding-q-wooden-cube-block_42256-1481.jpg?fit=626%2C417&amp;ssl=1" /> </div>
+                        <div class='col-12 col-sm-9 col-md-7 col-lg-9 mb-3'>
+                            <span class="font-size-16 bold">Top 5 reasons to work with Sriyog.Com?</span>
+                            <div class='success-stories-description font-size-14'>
+                                <p>
+                                    Sriyog is an open platform where any skilled manpower can easily get connected by the required person to help</p>
+                                <a class='read-story' href="https://sriyog.com/top-5-reasons-to-work-with-sriyog-com/">
+                                    <span>Read story</span>
+                                    <div class='border-btm'></div>
+                                </a>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- success stories end -->
+
+
+        <!-- how-it-work start -->
+        <div class='how-it-works'>
+            <div class="container">
+                <div class="row ">
+                    <div class="how-it-works-title">
+                        <b class="">How it works</b>
+                    </div>
+                </div>
+            </div>
+            <!--  <div class="row">
+  <img src='/assets/images/How-It-Works.png' alt='how-it-works' class="how-it-works-img-container image-style" />
+</div> -->
+            <section class="our-pros-sec">
+                <div class="our-pros">
+                    <div class="our-pros-item">
+                        <div class="our-pros-img">
+                            <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/search-handyman-biratnagar.png" alt="Search"> </div>
+                        <h4>Search </h4>
+                    </div>
+                    <div class="our-pros-item">
+                        <div class="our-pros-img">
+                            <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/call-handyman-kathmandu.png" alt="Call"> </div>
+                        <h4>Call</h4>
+                    </div>
+                    <div class="our-pros-item item3pros">
+                        <div class="our-pros-img">
+                            <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/hire-handyman-itahari.png" alt="Instruct"> </div>
+                        <h4>Instruct</h4>
+                    </div>
+                    <div class="our-pros-item big-pros">
+                        <div class="our-pros-img">
+                            <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/plumber-in-kathmandu.png" alt="Take-Rest"> </div>
+                        <h4>Take Rest</h4>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- how-it-work end -->
+
+
+        <!-- data-details start -->
+        <div class='data-details-container'>
+            <div class='container p-5'>
+                <div class='row justify-content-between'>
+                    <div class='flex flex-direction-column align-items-center  count-block'>
+                        <span class='data-detail-number'>18000<sup>+</sup></span>
+                        <span class='data-detail-text font-size-14'>Professionals</span>
+                    </div>
+                    <div class='flex flex-direction-column align-items-center  count-block'>
+                        <span class='data-detail-number'>18</span>
+                        <span class='data-detail-text font-size-14'>Categories</span>
+                    </div>
+                    <div class='flex flex-direction-column align-items-center  count-block'>
+                        <span class='data-detail-number'>168</span>
+                        <span class='data-detail-text font-size-14'>Sub-Categories</span>
+                    </div>
+                    <div class='flex flex-direction-column align-items-center  count-block'>
+                        <span class='data-detail-number'>7500<sup>+</sup></span>
+                        <span class='data-detail-text font-size-14'>Verified Pro</span>
+                    </div>
+                    <div class='flex flex-direction-column align-items-center  count-block-2'>
+                        <span class='data-detail-number'>25<sup>+</sup></span>
+                        <span class='data-detail-text font-size-14'>Success Stories</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- data-details end -->
+
+
+        <!-- news-sites start -->
+        <!-- news-sites start -->
+        <div class='container py-5 px-5 news-sites'>
+            <div class="agency_slider sy-reponsive">
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Abhiyandaily">
+                    <a href="https://sriyog.com/media-agency/abhiyandaily/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/abhiyan.png" alt="abhiyandaily" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="AP1 HD">
+                    <a href="https://sriyog.com/media-agency/ap1-hd/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/ap1hd-logo.jpg" alt="ap1-hd" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Artha Sarokar">
+                    <a href="https://sriyog.com/media-agency/artha-sarokar/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/artahsarokar-logo.jpg" alt="artha-sarokar" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Baahrakhari">
+                    <a href="https://sriyog.com/media-agency/baahrakhari/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/12khari.png" alt="baahrakhari" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Bizpati">
+                    <a href="https://sriyog.com/media-agency/bizpati/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/bizpati-logo.jpg" alt="bizpati" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Desh Sanchar">
+                    <a href="https://sriyog.com/media-agency/desh-sanchar/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/deshsanchar-logo.jpg" alt="desh-sanchar" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Economickhabar">
+                    <a href="https://sriyog.com/media-agency/economickhabar/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/economic-khabar.png" alt="economickhabar" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Epurwa">
+                    <a href="https://sriyog.com/media-agency/epurwa/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/e-purba.png" alt="epurwa" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Hamro Katha">
+                    <a href="https://sriyog.com/media-agency/hamro-katha/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/hamro-katha-logo.jpg" alt="hamro-katha" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Kantipur Daily">
+                    <a href="https://sriyog.com/media-agency/kantipur-daily/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/kantipur-daily-logo.jpg" alt="kantipur-daily" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Kantipur Nari">
+                    <a href="https://sriyog.com/media-agency/kantipur-nari/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/kantipur-nari-logo.jpg" alt="kantipur-nari" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Kantipur Saptahik">
+                    <a href="https://sriyog.com/media-agency/kantipur-saptahik/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/kantipur-saptahik-logo.jpg" alt="kantipur-saptahik" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Kantipur TV">
+                    <a href="https://sriyog.com/media-agency/kantipur-tv/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/kantipur-tv-hd-log.jpg" alt="kantipur-tv" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Kendrabindu Online Media">
+                    <a href="https://sriyog.com/media-agency/kendrabindu-online-media/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/kendrabindu-logo.jpg" alt="kendrabindu-online-media" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Living With ICT">
+                    <a href="https://sriyog.com/media-agency/living-with-ict/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/living-with-ict-logo.jpg" alt="living-with-ict" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Nagarikbazaar">
+                    <a href="https://sriyog.com/media-agency/nagarikbazaar/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/nagarik-news.png" alt="nagarikbazaar" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Nepal Headlines">
+                    <a href="https://sriyog.com/media-agency/nepal-headlines/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/nepal-headlines-logo.jpg" alt="nepal-headlines" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Nepal Television">
+                    <a href="https://sriyog.com/media-agency/nepal-television/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/nepal-television-logo.jpg" alt="nepal-television" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Nepal Times">
+                    <a href="https://sriyog.com/media-agency/nepal-times/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/nepaltimes-logo.jpg" alt="nepal-times" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Nepalnews">
+                    <a href="https://sriyog.com/media-agency/nepalnews/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/nepal-news.png" alt="nepalnews" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Online Khabar">
+                    <a href="https://sriyog.com/media-agency/online-khabar/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/onlinekhabar-logo.jpg" alt="online-khabar" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Our Biratnagar">
+                    <a href="https://sriyog.com/media-agency/our-biratnagar/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/our-biratnagar-logo.jpg" alt="our-biratnagar" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Pradesh1tv">
+                    <a href="https://sriyog.com/media-agency/pradesh1tv/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/pradesh1tv.png" alt="pradesh1tv" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Saptakoshi FM">
+                    <a href="https://sriyog.com/media-agency/saptakoshi-fm/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/saptakoshi-fm-logo.jpg" alt="saptakoshi-fm" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Setopati">
+                    <a href="https://sriyog.com/media-agency/setopati/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/setopati.png" alt="setopati" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Sukrabar">
+                    <a href="https://sriyog.com/media-agency/sukrabar/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/nagarik-shukrabar.png" alt="sukrabar" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="TechLekh">
+                    <a href="https://sriyog.com/media-agency/techlekh/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/techlekh-logo.jpg" alt="techlekh" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="The Kathmandu Post">
+                    <a href="https://sriyog.com/media-agency/the-kathmandu-post/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/the-kathmandu-post-logo.jpg" alt="the-kathmandu-post" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Time Khabar">
+                    <a href="https://sriyog.com/media-agency/time-khabar/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/08/time-khabar-logo.png" alt="time-khabar" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Ujyaaloonline">
+                    <a href="https://sriyog.com/media-agency/ujyaaloonline/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/ujjyalo.png" alt="ujyaaloonline" class="themesriyog_slider_img">
+                    </a>
+                </div>
+                <div class="single_agency_slider" data-toggle="tooltip" data-placement="top" title="Yubapost">
+                    <a href="https://sriyog.com/media-agency/yubapost/">
+                        <img src="https://sriyog.com/wp-content/uploads/2019/09/yubapost.png" alt="yubapost" class="themesriyog_slider_img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- news-sites end -->
+
+        <!-- become-provider start -->
+        <div class='become-provider'>
+            <div class='container padding-40-5p'>
+                <div class='row bold b-provider'>Become a provider</div>
+                <div role="form" class="wpcf7" id="wpcf7-f7206-o1" lang="en-US" dir="ltr">
+                    <div class="screen-reader-response"></div>
+                    <form action="/#wpcf7-f7206-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="7206" />
+                            <input type="hidden" name="_wpcf7_version" value="5.1.4" />
+                            <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f7206-o1" />
+                            <input type="hidden" name="_wpcf7_container_post" value="0" />
+                        </div>
+                        <div class="row justify-content-center front-form">
+                            <div class="col-12 col-lg-2 col-md-6 mb-4">
+                                <span class="wpcf7-form-control-wrap firstname"><input type="text" name="firstname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required become-provider-input box-shadow border-radius-0" aria-required="true" aria-invalid="false" placeholder="First Name" /></span>
+                            </div>
+                            <div class="col-12 col-lg-2 col-md-6 mb-4">
+                                <span class="wpcf7-form-control-wrap lastname"><input type="text" name="lastname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required become-provider-input box-shadow border-radius-0" aria-required="true" aria-invalid="false" placeholder="Last Name" /></span>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 mb-4">
+                                <span class="wpcf7-form-control-wrap city"><input type="text" name="city" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required become-provider-input box-shadow border-radius-0" aria-required="true" aria-invalid="false" placeholder="city" /></span>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 mb-4">
+                                <span class="wpcf7-form-control-wrap tel-268"><input type="tel" name="tel-268" value="977-9852024365" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel phone-number-field" aria-required="true" aria-invalid="false" /></span>
+                            </div>
+                            <div class="col-12 col-lg-2 col-md-12 mb-4">
+                                <input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit font-size-12 btn sriyogweb-btn-2 border-radius-4 sriyogweb_last_btn" />
+                            </div>
+                        </div>
+                        <input type='hidden' class='wpcf7-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' />
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <!-- about page body ends -->
+
+
+    <!-- =======================================
+      === global footer for SriYog.com goes here 
+    =============== -->
+
+    <div id="footer_wrapper">
+        <!-- footer start -->
+        <div class="footer">
+            <div class="container padding-40-5p pt-0 position-relative">
+                <div class="row contact-box">
+                    <div class="col-6 col-md-4 col-lg-2 flex footer-col flex-direction-column mb-4 mt-5">
+                        <a href="about.html">About Us</a>
+                        <a href="how-it-works.html">How It Works</a>
+                        <a href="team.html">Team</a>
+                        <a href="press.html">Press</a>
+                        <a href="careers.html">Career <span class="hiring">We're Hiring</span></a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 flex footer-col flex-direction-column mb-4 mt-5">
+                        <a href="our-mission.html">Our Mission</a>
+                        <!-- <a href="#">Partners</a> -->
+                        <a href="testimonial.html">Testimonials</a>
+                        <a href="faq.html">FAQ/ KnowBase</a>
+                        <a target="_blank" href="download.html" title="Opens in a new window">Media Kit</a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 flex footer-col flex-direction-column mb-4 mt-5">
+                        <a href="stories.html">Stories</a>
+                        <!-- <a href="https://sriyog.zendesk.com">Support</a> -->
+                        <a href="support.html">Support</a>
+                        <a href="remove-your-details.html">Remove Your Details</a>
+                        <a href="complain.html">Complain a Provider</a>
+                        <a href="suggest-a-feature.html">Suggest a Feature</a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 flex footer-col flex-direction-column mb-4 mt-5">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="tos.html">Terms of Services</a>
+                        <a href="disclaimer.html">Disclaimer</a>
+                        <a href="eula.html">EULA</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+
+                    <!-- FOOTER CONTACT BOX -->
+                    <div class="col-12 col-md-8 col-lg-3 mb-4 sriyog-contact-container shadow">
+                        <div class="flex flex-direction-column sriyog-contact-info">
+                            <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/images/logo.svg" alt="" class="sriyogweb-logo-style mt-3">
+
+                            <ul class="sy-ct">
+                                <li class="mt-2 pt-2">
+                                    <i class="fas fa-map-marker-alt"></i> Pokharia, Biratnagar (Regd.)
+                                </li>
+
+                                <li class="mt-2 pt-2">
+                                    <i class="fas fa-map-marker-alt"></i> Aloknagar, Kathmandu (Corp.)
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-phone-alt mt-2 pt-2"></i> +977-9852020807
+                                </li>
+
+                                <li>
+                                    <a href="mailto: enquiry@sriyog.com"><i class="fas fa-envelope-open mt-2 pt-2"></i> enquiry@sriyog.com</a>
+                                </li>
+                            </ul>
+
+                            <div class="flex align-items-center">
+                                <img src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/miscall@2x.png" alt="miscall" height="auto" width="40px">
+                                <a href="tel:+9779852024365">
+                                    <b>
+                                  <span style="color:#404040; white-space: nowrap;">
+                                    &nbsp;98520-
+                                    <span style="font-size:1.5rem">24</span><span style="font-size:2.5rem"> 365</span>
+                                  </span>
+                              </b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="footer-img row contact-box" src="images/sfooter.png" alt="footer">
+            </div>
+            <div class="black-bg"></div>
+        </div>
+        <!-- footer end -->
+
+        <!--bottom footer start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-12 sy-copyright ">
+                        <small>All Rights Reserved. © Sriyog Consulting Pvt. Ltd.</small>
+                    </div>
+
+                    <div class="col-lg-4  col-md-12 col-sm-12 col-12 sy-applogo">
+                        <a href="#"><img class="app-play-store" src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/appStore.svg" alt=""></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.pracasinfosys.sriyog.com" target="_blank"><img class="app-play-store" src="https://sriyog.com/wp-content/themes/themesriyog/assets/icons/playStore.svg" alt=""></a>
+                    </div>
+
+                    <div class="col-lg-3  col-md-12 col-sm-12 col-12 follow-us sy-share">
+
+                        <span class="flex-1 sy-follow">Follow Us On:</span>
+                        <div class="social-share flex-1 justify-content-between social-logo">
+                            <a class="nav-link" href="https://www.facebook.com/sriyogdotcom" target="_blank" title="Opens in a new window"><i class="fab fa-facebook-f social-logo"></i></a>
+                            <a class="nav-link" href="https://twitter.com/thesriyog" target="_blank" title="Opens in a new window"><i class="fab fa-twitter social-logo"></i></a>
+                            <a class="nav-link" href="https://www.linkedin.com/company/sriyog-consulting/" target="_blank" title="Opens in a new window"><i class="fab fa-linkedin-in social-logo"></i></a>
+                            <a class="nav-link" href="#"><i class="fab fa-youtube social-logo"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--bottom footer end -->
+
+    </div>
+
+    <!-- global footer end -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

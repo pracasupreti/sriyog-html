@@ -1,0 +1,49 @@
+/*-----------------------
+    Color Css
+-----------------------*/
+
+
+/*----------------------
+    background 
+----------------------*/
+
+.about-us-area .about-app-area .single-about-app-box:hover,
+.about-us-area .content .boxed-btn.blank,
+.feature-area .featured-left-item .single-featured-box .icon .icon-inner .icon-wrapper,
+.feature-area .featured-right-item .single-featured-box .icon .icon-inner .icon-wrapper,
+.introduce-with-area:after,
+.suitable-area:after,
+.subscribe-area .right-content .subscription-form p button[type=submit],
+.team-member-area .single-team-member .content,
+.team-member-area .single-team-member .thumb .hover .social li a,
+.pricing-area .single-pricing-plan .footer .boxed-btn,
+.pricing-area .single-pricing-plan:hover:after,
+.faq-area .faq-accordion .panel-default>.panel-heading a[aria-expanded="true"]:after,
+.faq-area .faq-accordion .panel-default>.panel-heading a:after {
+    background-color: #8b181b;
+}
+
+.footer-area {
+    background-color: #e6e6e6;
+}
+
+.navbar-area.nav-fixed {
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #8b181b;
+}
+
+.navbar-area .boxed-btn.blank:hover,
+.introduce-with-area .video-play-btn:hover,
+.suitable-area .left-content .boxed-btn.blank:hover,
+.team-member-area .single-team-member .thumb .hover .social li a:hover,
+.pricing-area .single-pricing-plan .header .price .icon,
+.get-in-touch-area .get-in-touch-form-wrapper .left-content .single-get-in-touch-box .icon i,
+.pricing-area .single-pricing-plan .header .price h3,
+.footer-area .footer-social li a:hover {
+    color: #8b181b;
+}
+
+.about-us-area .about-app-area .single-about-app-box .icon svg,
+.counter-area .single-counter-box .icon svg {
+    fill: #8b181b;
+}
